@@ -13,7 +13,7 @@ function loadPage() {
 function textTypingEffectHeroText() {
     let i = 0
     const txt = "<h1>Hi, I'm Markus Karlsson</h1>"
-    const speed = 125
+    const speed = 140
     const element = document.getElementById("welcome-text")
     const interval = setInterval(addCharacter, speed)
 

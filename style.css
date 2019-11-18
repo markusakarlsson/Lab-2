@@ -8,7 +8,10 @@ body {
     margin: 0;
     background-color: white;
     color: black;
-    scroll-behavior: smooth;
+}
+
+header {
+    font-family: 'EB Garamond', serif;
 }
 
 .hero-content {
@@ -16,9 +19,9 @@ body {
 }
 
 #welcome-text {
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
-    top: 5rem;
+    top: 15rem;
     right: 5rem;
     color: white;
 }
@@ -29,10 +32,10 @@ body {
 }
 
 #profession-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     position: absolute;
-    top: 11rem;
+    top: 21rem;
     right: 5rem;
     animation-name: fade;
     animation-duration: 5s;
@@ -76,9 +79,10 @@ body {
     }
 }
 
-main {
+.main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin-left: 12rem;
     margin-right: 12rem;
@@ -92,20 +96,25 @@ hr {
 }
 
 .main-content img {
-    width: 60%;
+    width: 70%;
+    border-radius: 0.3rem;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 5px 12px 0 rgba(0,0,0,0.19);
 }
 
 button {
-    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
     background-color: white;
     border: 1px solid #D8A001;
-    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    padding: 0.1rem 1rem;
+    margin-bottom: 5rem;
 }
 
 button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
     background-color: #D8A001;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 a:link {
@@ -125,6 +134,17 @@ footer {
 .contact img {
     height: 3rem;
     width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.contact img:hover {
+    transform: scale(1.1);
+}
+
+.contact h2 {
+    margin-top: 0;
 }
 
 .svg {
