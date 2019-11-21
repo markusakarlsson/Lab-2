@@ -10,10 +10,14 @@ body {
     color: black;
 }
 
+/* Different font compare to everything else because I wanted the number to 
+look like the number "1" and not an "I" */
 header {
     font-family: 'EB Garamond', serif;
 }
 
+/* My front page styling with a background image filling the whole screen 
+and with text on top. */
 .hero-content {
     position: relative;
 }
@@ -37,6 +41,8 @@ header {
     position: absolute;
     top: 21rem;
     right: 5rem;
+
+    /* Fading animation */
     animation-name: fade;
     animation-duration: 5s;
     animation-timing-function: ease-in;
@@ -51,6 +57,7 @@ header {
     }
 }
 
+/* Styling for the arrow which shows that the page have more content below. */
 .scroll-arrow {
     position: absolute;
     width: 100%;
@@ -63,6 +70,8 @@ header {
     color: white;
     display: flex;
     justify-content: center;
+
+    /* Styling to get the bouncing effect on the arrow. */
     animation: 2s ease-in-out arrowBounce infinite;
     text-decoration: none;
 }
@@ -79,6 +88,7 @@ header {
     }
 }
 
+/* Main content styling. */
 .main-content {
     display: flex;
     flex-direction: column;
@@ -96,8 +106,9 @@ header {
     margin-bottom: 2rem;
 }
 
+/* Styling for the image slider. */
 .image-slider {
-    height: 600px;
+    height: 37rem;
     position: relative;
 }
 
@@ -118,6 +129,7 @@ header {
     opacity: 0;
 }
 
+/* Breaking line for separating content. */
 hr {
     width: 90%;
     border: 0;
@@ -125,6 +137,7 @@ hr {
     margin-top: 3rem;
 }
 
+/* Button styling */
 button {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
@@ -142,15 +155,18 @@ button:hover {
     color: white;
 }
 
+/* Link styling. */
 a:link {
     text-decoration: none;
 }
 
+/* List styling. */
 ul {
     padding: 0;
     list-style-type: none;
 }
 
+/* Styling for footer including contact content. */
 footer {
     display: flex;
     justify-content: center;
