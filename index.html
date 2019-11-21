@@ -7,17 +7,19 @@
     <title>Markus Karlsson - Résumé</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/d8c931a84e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="(max-width: 59em)" href="tablet.css">
+    <link rel="stylesheet" media="(max-width: 48em)" href="mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d8c931a84e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
         <div class="hero-content">
-            <img class="hero-img" alt="Markus Karlsson" src="./images/pic1.jpeg">
+            <img class="hero-img" alt="Pen" src="./images/pic1.jpeg">
             <div class="hero-text">
                 <h1 id="welcome-text"></h1>
                 <h2 id="profession-title">-Front End Developer-</h2>
@@ -34,48 +36,61 @@
         <div class="main-content">
             <div id="about-me">
                 <h2>About me</h2>
-                <img src="./images/south-africa.jpeg" alt="South Africa">
                 <p>My name is Markus Karlsson and I'm a 27 year old guy from Gothenburg in Sweden. 
                     I live with my girlfriend Lisa and we love to travel and enjoy life. 
                     The best trip so far is South Africa back in 2018. Ever since I watched <i>The Lion King</i> 
-                    as a kid I've always dreamed to meet these beautiful animals in the wild. 
+                    as a kid I've always dreamed to meet these beautiful animals in the wild.
+                    <br>
+                    <br> 
                     If I don't hanging out with friends or family I spent the most of my time 
                     at the ice hockey rink trying to catch some pucks. Two other big interests
                     of mine are cooking & music. The perfect night for me is cooking a nice dinner in great 
                     company before heading to a concert and experience some live music.
                 </p>
-                <hr>
+            </div>
+            <div class="image-slider">
+                <img src="./images/south-africa.jpeg" alt="South Africa">
+                <img src="./images/nz1.jpeg" alt="New Zeeland" class="hidden">
+                <img src="./images/nz2.jpeg" alt="Milford Sound" class="hidden">
+                <img src="./images/nz3.jpeg" alt="Franz Josef" class="hidden">
+                <img src="./images/aus1.jpeg" alt="Australia" class="hidden">
             </div>
             <div class="work-experience">
                 <h2>Work experience</h2>
-                <p> Since 2011 I've been working at different warehouses and some other places. I started at 
+                <p>Since 2011 I've been working at different warehouses and some other places. I started at 
                     <i>Swedish Match</i> after my graduation from upper secondary school. Between 2011-2016 I 
                     worked for the company when they suddenly decided to move all the business to Stockholm. 
                     I decided not to follow, instead I went on a two month trip to Australia & New Zeeland 
                     on my own. That's something I'll never regret, I learnt so much meeting new people and cultures 
-                    from all over the world and saw an extraordinary nature. Back home in Sweden again I 
-                    started to work with my old boss from <i>Swedish Match</i> at a company called <i>Brammer</i>. 
-                    I stayed there between 2016-2018 when it was time to lose my job for the second time. I moved 
-                    on to <i>Volvo</i> for a short while when I felt it was time to do something else. By playing 
-                    hockey I met a guy in 2019 who had recently started a "digital foodcourt" with his brother 
-                    focusing on sustainable food. Unfortunately they couldn't offer me a full time job at this 
-                    moment in time but it was still a great experience.
+                    from all over the world and were forced to speak english all the time. 
+                    <br>
+                    <br>
+                    Back home in Sweden again I started to work with my old boss from <i>Swedish Match</i> at 
+                    a company called <i>Brammer</i>. I stayed there between 2016-2018 until it was time to lose 
+                    my job for the same reason a second time. Shortly after I moved on to <i>Volvo</i> when I felt 
+                    it was time to do something else. Through my ice hockey playing I met a guy in 2019 who had 
+                    recently started a "digital foodcourt" called <i>Nordish Market</i> with his brother focusing 
+                    on sustainable food. For me it was the perfect chance to work with cooking but unfortunately 
+                    they couldn't offer me a full time job at that moment in time but it was still a great experience.
                 </p>
                 <hr>
             </div>
             <div class="education">
                 <h2>Education</h2>
-                <ul>
-                    <li>Kitas Gymnasium 2007-2010, Samhäll - ekonomi</li>
-                    <li></li>
-                    <li></li>
+                <p>
+                <ul class="education-list">
+                    <li><b>Economics Programme</b> <i>Kitas Gymnasium</i>, 2007 - 2010</li>
+                    <li><b>Small Enterprises B</b> <i>Ung Företagsamhet</i>, 2009 - 2010</li>
+                    <li><b>Lean Production</b> <i>Almhem Consulting</i>, 2014 - 2015</li>
+                    <li><b>Front End Developer</b> <i>Medieinstitutet</i>, 2019 - Present</li>
                 </ul>
+                </p>
                 <hr>
             </div>
             <div class="projects">
                 <h2>Projects</h2>
                 <img src="./images/project1.jpg" alt="Project 1">
-                <p>My text based game using Javascript called <i>Find the remote control</i>.</p>
+                <p>My first text based game using <b>Javascript</b> which I named <i>Hitta Fjärrkontrollen</i>.</p>
                 <a href="https://markusakarlsson.github.io/lab1/" target="_blank">
                     <button>Play</button>
                 </a>
@@ -84,6 +99,7 @@
                 </a>
                 <br>
                 <img src="./images/project2.jpg" alt="Project 2">
+                <p>My first project with <b>Bootstrap</b>. The task was to modernize an older web site.</p>
             </div>
         </div>
     </main>

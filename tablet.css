@@ -1,0 +1,25 @@
+.hero-content {
+    height: 100vh;
+}
+
+.hero-img {
+    object-fit: cover;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-text {
+    font-size: 2.5rem;
+}
+
+#profession-title {
+    font-size: 1.5rem;
+}
+
+.main-content {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}

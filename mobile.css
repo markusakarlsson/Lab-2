@@ -1,0 +1,24 @@
+body {
+    font-size: 1.3rem;
+}
+
+.main-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#welcome-text {
+    top: 5rem;
+    left: 2.9rem;
+    right: 0;
+}
+
+#profession-title {
+    top: 15rem;
+    left: 2.9rem;
+    right: 0;
+}
+
+.projects img {
+    width: 18.5rem;
+}

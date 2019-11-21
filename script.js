@@ -1,10 +1,11 @@
 window.addEventListener('load', loadPage)
 
 /**
- * 
+ * Starts the two functions when the page loads
  */
 function loadPage() {
     textTypingEffectHeroText()
+    startImageSlider(6000)
 }
 
 /**
@@ -25,4 +26,32 @@ function textTypingEffectHeroText() {
             clearInterval(interval)
         }
     }
+}
+
+let currentImageIndex = 0
+
+/**
+ * Starts the image slider
+ * @param {Number} interval animation interval in milliseconds
+ */
+function startImageSlider(interval) {
+    setInterval(changeImage, interval)
+}
+
+/**
+ * Changes the opacity on current and next image
+ * to animate the transiation to the next image
+ */
+function changeImage() {
+    const images = document.querySelectorAll('.image-slider img')
+
+    images[currentImageIndex].classList.add('hidden')
+
+    // Resets value to 0
+    currentImageIndex++
+    if (currentImageIndex >= images.length) {
+         currentImageIndex = 0
+    }
+
+    images[currentImageIndex].classList.remove('hidden')
 }
