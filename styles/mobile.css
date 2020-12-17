@@ -1,6 +1,6 @@
 /* Styling for mobile to do the site responsive. */
 
-.main-content {
+.main-content-container {
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -17,10 +17,6 @@
     right: 0;
 }
 
-.projects img {
-    width: 18.5rem;
-}
-
-.contact {
+.contact-container {
     font-size: 1.3rem;
 }

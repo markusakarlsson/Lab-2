@@ -43,9 +43,9 @@ function startImageSlider(interval) {
  * to animate the transiation to the next image
  */
 function changeImage() {
-    const images = document.querySelectorAll('.image-slider img')
+    const images = document.querySelectorAll('.image-slider-container img')
 
-    images[currentImageIndex].classList.add('hidden')
+    images[currentImageIndex].classList.add('image-hidden')
 
     // Resets value to 0
     currentImageIndex++
@@ -53,5 +53,5 @@ function changeImage() {
          currentImageIndex = 0
     }
 
-    images[currentImageIndex].classList.remove('hidden')
+    images[currentImageIndex].classList.remove('image-hidden')
 }

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Markus Karlsson - Résumé</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="(max-width: 59em)" href="tablet.css">
-    <link rel="stylesheet" media="(max-width: 48em)" href="mobile.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" media="(max-width: 59em)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(max-width: 47em)" href="./styles/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <script src="script.js"></script>
@@ -59,7 +59,7 @@
     <main>
 
         <!-- Some text about who I am. -->
-        <div class="main-content">
+        <div class="main-content-container">
             <div id="about-me">
                 <h2>About me</h2>
                 <p>My name is Markus Karlsson and I'm a 27 year old guy from Gothenburg in Sweden. 
@@ -76,16 +76,16 @@
             </div>
 
             <!-- A few pictures from my traveling -->
-            <div class="image-slider">
+            <div class="image-slider-container">
                 <img src="./images/south-africa.jpeg" alt="South Africa">
-                <img src="./images/nz1.jpeg" alt="New Zeeland" class="hidden">
-                <img src="./images/nz2.jpeg" alt="Milford Sound" class="hidden">
-                <img src="./images/nz3.jpeg" alt="Franz Josef" class="hidden">
-                <img src="./images/aus1.jpeg" alt="Australia" class="hidden">
+                <img src="./images/nz1.jpeg" alt="New Zeeland" class="image-hidden">
+                <img src="./images/nz2.jpeg" alt="Milford Sound" class="image-hidden">
+                <img src="./images/nz3.jpeg" alt="Franz Josef" class="image-hidden">
+                <img src="./images/aus1.jpeg" alt="Australia" class="image-hidden">
             </div>
 
             <!-- Some text about my life, primer focus on my different jobs through the years. -->
-            <div class="work-experience">
+            <div class="work-experience-container">
                 <h2>Work experience</h2>
                 <p>Since 2011 I've been working at different warehouses and some other places. I started at 
                     <i>Swedish Match</i> after my graduation from upper secondary school. Between 2011-2016 I 
@@ -103,11 +103,11 @@
                     on sustainable food. For me it was the perfect chance to work with cooking but unfortunately 
                     they couldn't offer me a full time job at that moment in time but it was still a great experience.
                 </p>
-                <hr>
+                <div class="content-breaking-line"></div>
             </div>
 
             <!--My education-list -->
-            <div class="education">
+            <div class="education-container">
                 <h2>Education</h2>
                 <p>
                 <ul class="education-list">
@@ -117,11 +117,11 @@
                     <li><b>Front End Developer</b> <i>Medieinstitutet</i>, 2019 - Present</li>
                 </ul>
                 </p>
-                <hr>
+                <div class="content-breaking-line"></div>
             </div>
 
             <!-- Portfolio of my two projects so far. -->
-            <div class="projects">
+            <div class="projects-container">
                 <h2>Projects</h2>
                 <img src="./images/project1.jpg" alt="Project 1">
                 <p>My first text based game using <b>Javascript</b> which I named <i>Hitta Fjärrkontrollen</i>.</p>
@@ -141,14 +141,14 @@
 
     <!-- Footer with contact information and links to GitHub & LinkedIn. -->
     <footer>
-        <div class="contact">
+        <div class="contact-container">
             <h2>Contact</h2>
             <p>markus.karlsson@medieinstitutet.se</p>
             <a href="https://github.com/markusakarlsson" target="_blank">
-                <img src="./images/github-brands.svg" alt="GitHub" class="svg">
+                <img src="./images/github-brands.svg" alt="GitHub" class="social-icon">
             </a>
             <a href="https://www.linkedin.com/home/?originalSubdomain=se" target="_blank">
-                <img src="./images/linkedin-brands.svg" alt="LinkedIn" class="svg">
+                <img src="./images/linkedin-brands.svg" alt="LinkedIn" class="social-icon">
             </a>
         </div>
     </footer>
